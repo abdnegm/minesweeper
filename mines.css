@@ -1,0 +1,92 @@
+:root {
+  --numRows: 0;
+  --numCols: 0;
+  --length: 2vw;
+  --width: 2vw;
+}
+
+.box {
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 4px;
+    grid-template-rows: repeat(var(--numRows), var(--length));
+    grid-template-columns: repeat(var(--numCols), var(--width));
+    text-align: center;
+    justify-content: center;
+    line-height: var(--width);
+}
+
+.tools {
+    width: 100%;
+    display: inline-block;
+	margin-top: .7em;
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7vw;
+}
+
+.button {
+  background-color: black; /* Green */
+  border-radius: 10px;
+  color: white;
+  padding: 1px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+#time {
+	display:block;
+	text-align: right;
+}
+
+#flagsRemaining {
+    display:inline-block;
+	text-align: left;
+}
+
+.masked {
+    color: black;
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
+}
+
+.four {
+    color: purple;
+}
+
+.five {
+    color: brown;
+}
+
+.six {
+    color: pink;
+}
+
+.seven {
+    color: black;
+}
+
+.eight {
+    color: gray;
+}
